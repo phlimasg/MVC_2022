@@ -1,0 +1,10 @@
+﻿@model CarrinhoCompraViewModel
+
+
+@if(Model.CarrinhoCompra.CarrinhoCompraItems.Count > 0)
+{
+    <a asp-controller="CarrinhoCompra" asp-action="Index" class="btn btn-primary">
+      Messages <span class="badge bg-danger">@Model.CarrinhoCompra.CarrinhoCompraItems.Count</span>
+    </a>
+    
+}
